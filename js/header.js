@@ -13,5 +13,5 @@ heartIcon.addEventListener('click', () => {
 });
 
 bagIcon.addEventListener('click', () => {
-  window.location.href = 'pages/orderlist.html'; 
+  window.location.href = 'pages/payment.html'; 
 });
