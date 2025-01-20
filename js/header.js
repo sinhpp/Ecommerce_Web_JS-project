@@ -40,7 +40,7 @@ const navigateToPage = (event) => {
   }
 };
 
-// Attach the click event listener to each menu title
+// Attach the click event listener to each menu title 
 menuTitles.forEach((menuTitle) => {
   menuTitle.addEventListener("click", navigateToPage);
 });
