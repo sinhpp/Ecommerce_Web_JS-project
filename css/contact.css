@@ -119,7 +119,7 @@
     margin-bottom: 20px;
   }
   
-  button {
+  .btn{
     width: 100%;
     padding: 12px;
     background-color: #007bff;
@@ -134,22 +134,54 @@
     background-color: #0056b3;
   }
   
+  
   @media (max-width: 768px) {
     .contact-info {
+      display: block; /* Stack items vertically */
+      margin: 10px;
+    }
+  
+    .info-item {
+      width: 100%; /* Make each card take full width on mobile */
+      margin: 10px 0; /* Add vertical margin between cards */
+    }
+  
+    .header-main {
       flex-direction: column;
       align-items: center;
     }
   
-    .form-container {
+    .header-search-container {
+      width: 100%;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .form-row {
       flex-direction: column;
     }
   
-    .contact-form {
+    .form-row input {
       width: 100%;
+      margin-bottom: 10px;
     }
   
-    .map-container {
-      width: 100%;
+    .map-container iframe {
+      height: 200px;
+    }
+    .info-item {
+ 
+    transition: none;
+    
+ 
+    }
+    .info-item:hover {
+      transform: none;
+      box-shadow: none;
+    
     }
   }
   
