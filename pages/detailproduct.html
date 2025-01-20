@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="../css/detail.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <button id="prev-image" class="image-nav-btn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <img id="main-image" src="images/image.png" alt="Product Image">
+      <button id="next-image" class="image-nav-btn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="thumbnail-images">
+        <img class="thumbnail" src="images/image copy 2.png" alt="Thumbnail 1">
+        <img class="thumbnail" src="images/image copy 3.png" alt="Thumbnail 2">
+        <img class="thumbnail" src="images/image copy 4.png" alt="Thumbnail 3">
+        <img class="thumbnail" src="images/image copy 5.png" alt="Thumbnail 4">
+      </div>
+    </div>
+    <div class="product-details">
+      <h1>T-SHIRT</h1>
+      <p class="price" id="price">$15</p>
+      <p class="product-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s.</p>
+      
+      <div class="size-selection">
+        <button class="size-button" data-size="S">
+          <i class="fas fa-tshirt"></i> S
+        </button>
+        <button class="size-button" data-size="M">
+          <i class="fas fa-tshirt"></i> M
+        </button>
+        <button class="size-button" data-size="L">
+          <i class="fas fa-tshirt"></i> L
+        </button>
+      </div>
+      
+      <button class="add-to-cart">
+        <i class="fas fa-shopping-cart"></i> Start Order
+      </button>
+      <p class="total-price">Total Price: <span id="total-price">$15</span></p>
+    </div>
+  </div>
+  <script src="../js/detail.js"></script>
+
+
+   
+</body>
+</html>
