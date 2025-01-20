@@ -15,3 +15,32 @@ heartIcon.addEventListener('click', () => {
 bagIcon.addEventListener('click', () => {
   window.location.href = 'pages/payment.html'; 
 });
+
+
+
+// Add event listeners to all menu titles
+const menuTitles = document.querySelectorAll(".menu-title");
+
+// Function to handle navigation
+const navigateToPage = (event) => {
+  event.preventDefault(); // Prevent default anchor behavior
+  const pageName = event.target.textContent.trim().toLowerCase(); // Get the menu title and normalize it
+  const pageMap = {
+    home: "home.html", // Define the mapping between menu titles and pages
+    "women's": "women.html",
+    blog: "blog.html",
+    contact: "../pages/contact.html"
+  };
+
+  // Check if the page exists in the mapping, then navigate
+  if (pageMap[pageName]) {
+    window.location.href = pageMap[pageName];
+  } else {
+    console.error(`Page not found for ${pageName}`);
+  }
+};
+
+// Attach the click event listener to each menu title
+menuTitles.forEach((menuTitle) => {
+  menuTitle.addEventListener("click", navigateToPage);
+});
