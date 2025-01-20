@@ -28,7 +28,7 @@ const navigateToPage = (event) => {
   const pageMap = {
     home: "../index.html", // Define the mapping between menu titles and pages
     "women's": "women.html",
-    blog: "blog.html",
+    blog: "../pages/blog.html",
     contact: "../pages/contact.html"
   };
 
