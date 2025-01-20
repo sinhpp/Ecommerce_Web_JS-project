@@ -1,0 +1,18 @@
+.shop-now {
+    display: inline-block;
+    background-color: #fbf8f8;
+    color: #F67375;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 2px solid #F67375;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-now:hover {
+    background-color: #F67375;
+    color: #fbf8f8;
+    transform: scale(1.05);
+    cursor: pointer;
+}

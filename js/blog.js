@@ -26,9 +26,9 @@ const navigateToPage = (event) => {
   event.preventDefault(); // Prevent default anchor behavior
   const pageName = event.target.textContent.trim().toLowerCase(); // Get the menu title and normalize it
   const pageMap = {
-    home: "../index.html", // Define the mapping between menu titles and pages
+    blog: "../pages/blog.html", // Define the mapping between menu titles and pages
     "women's": "women.html",
-    blog: "../pages/blog.html",
+    home: "../index.html",
     contact: "../pages/contact.html"
   };
 
