@@ -12,9 +12,224 @@
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   
-  
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../../images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/style-prefix.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
 </head>
 <body>
+  <!-- Header -->
+
+<div class="overlay" data-overlay></div>
+
+
+<div class="header-main">
+
+  <div class="container">
+
+    <a href="#" class="header-logo">
+      <img src="../images/logo/splLOgo.png" alt="SPL Store's logo" width="120" height="130">
+    </a>
+
+    <div class="header-search-container">
+
+      <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+      <button class="search-btn">
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <div class="header-user-actions">
+
+      <button class="action-btn">
+        <ion-icon name="person-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<nav class="desktop-navigation-menu">
+
+  <div class="container">
+
+    <ul class="desktop-menu-category-list">
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Home</a>
+      </li>
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Categories</a>
+
+        <div class="dropdown-panel">
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Clothes</a>
+            </li>
+
+
+
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="../images/electronics-banner-1.jpg" alt="headphone collection" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Dress</a>
+            </li>
+
+
+
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="../images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Shoes</a>
+            </li>
+
+
+
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="../images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Bags</a>
+            </li>
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="../images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </li>
+
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Women's</a>
+
+        <ul class="dropdown-list">
+
+          <li class="dropdown-item">
+            <a href="#">Dress & Frock</a>
+          </li>
+
+          <li class="dropdown-item">
+            <a href="#">Earrings</a>
+          </li>
+
+          <li class="dropdown-item">
+            <a href="#">Necklace</a>
+          </li>
+
+          <li class="dropdown-item">
+            <a href="#">Makeup Kit</a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Blog</a>
+      </li>
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Hot Offers</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
+<div class="mobile-bottom-navigation">
+
+  <button class="action-btn" data-mobile-menu-open-btn>
+    <ion-icon name="menu-outline"></ion-icon>
+  </button>
+
+  <button class="action-btn">
+    <ion-icon name="bag-handle-outline"></ion-icon>
+
+    <span class="count">0</span>
+  </button>
+
+  <button class="action-btn">
+    <ion-icon name="home-outline"></ion-icon>
+  </button>
+
+  <button class="action-btn">
+    <ion-icon name="heart-outline"></ion-icon>
+
+    <span class="count">0</span>
+  </button>
+
+  <button class="action-btn" data-mobile-menu-open-btn>
+    <ion-icon name="grid-outline"></ion-icon>
+  </button>
+
+</div>
+
+<nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+</nav>
+
+</header>
   <div class="product-container">
     <div class="product-image">
       <button id="prev-image" class="image-nav-btn">
@@ -25,10 +240,12 @@
         <i class="fas fa-chevron-right"></i>
       </button>
       <div class="thumbnail-images">
-        <img class="thumbnail" src="images/image copy 2.png" alt="Thumbnail 1">
-        <img class="thumbnail" src="images/image copy 3.png" alt="Thumbnail 2">
-        <img class="thumbnail" src="images/image copy 4.png" alt="Thumbnail 3">
-        <img class="thumbnail" src="images/image copy 5.png" alt="Thumbnail 4">
+        <img class="thumbnail" src="../image/image.png" alt="Thumbnail 1">
+        <img class="thumbnail" src="../image/image copy 10.png" alt="Thumbnail 2">
+        <img class="thumbnail" src="../image/image copy 11.png" alt="Thumbnail 3">
+        <img class="thumbnail" src="../image/image copy 12.png" alt="Thumbnail 4">
+        <img class="thumbnail" src="../image/image copy 13.png" alt="Thumbnail 5">  
+        <img class="thumbnail" src="../image/image copy 11.png" alt="Thumbnail 6">
       </div>
     </div>
     <div class="product-details">
@@ -54,9 +271,252 @@
       <p class="total-price">Total Price: <span id="total-price">$15</span></p>
     </div>
   </div>
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Fashion :</h3>
+
+          <a href="#" class="footer-category-link">T-shirt</a>
+          <a href="#" class="footer-category-link">Shirts</a>
+          <a href="#" class="footer-category-link">shorts & jeans</a>
+          <a href="#" class="footer-category-link">jacket</a>
+          <a href="#" class="footer-category-link">dress & frock</a>
+          <a href="#" class="footer-category-link">innerwear</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Shoes :</h3>
+
+          <a href="#" class="footer-category-link">High heels</a>
+          <a href="#" class="footer-category-link">formal</a>
+          <a href="#" class="footer-category-link">casual</a>
+          <a href="#" class="footer-category-link">Party wear shoes</a>
+          <a href="#" class="footer-category-link">Branded</a>
+          <a href="#" class="footer-category-link">Long shoes</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fashion</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Shoes</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Bags</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              2004 State 371 Sorla
+              Phnom Penh, Cambodia, 14812, Cam
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(+855) 571-718</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">kunnliixingg@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">SPL STORE</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
   <script src="../js/detail.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/script.js"></script>
+  <script type="module" src="js/homepage.js"></script>
 
 
-   
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

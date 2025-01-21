@@ -1,67 +1,66 @@
- // Thumbnail image click functionality
- const thumbnails = document.querySelectorAll('.thumbnail-images img');
- const mainImage = document.getElementById('main-image');
+// Image gallery navigation
+const prevImageBtn = document.getElementById('prev-image');
+const nextImageBtn = document.getElementById('next-image');
+const mainImage = document.getElementById('main-image');
+const thumbnailImages = document.querySelectorAll('.thumbnail');
 
- thumbnails.forEach((thumbnail) => {
-   thumbnail.addEventListener('click', () => {
-     mainImage.src = thumbnail.src;
-   });
- });
+let currentImageIndex = 0;
 
- // Size selection functionality
- const sizeButtons = document.querySelectorAll('.size-button');
- let selectedSize = 'S'; // Default size
+function changeImage(index) {
+  mainImage.src = thumbnailImages[index].src;
+  currentImageIndex = index;
+}
 
- sizeButtons.forEach((button) => {
-   button.addEventListener('click', () => {
-     // Remove the active class from all buttons
-     sizeButtons.forEach((btn) => btn.classList.remove('active'));
-     
-     // Add the active class to the clicked button
-     button.classList.add('active');
-     
-     // Update the selected size
-     selectedSize = button.getAttribute('data-size');
-     document.querySelector('.total-price').textContent = `Total Price: $${calculatePrice(selectedSize)}`;
-   });
- });
+// Next and Previous image navigation
+prevImageBtn.addEventListener('click', () => {
+  if (currentImageIndex > 0) {
+    changeImage(currentImageIndex - 1);
+  }
+});
 
- // Price calculation based on size
- function calculatePrice(size) {
-   let price = 15; // Base price
-   if (size === 'M') {
-     price = 18;
-   } else if (size === 'L') {
-     price = 20;
-   }
-   return price;
- }
+nextImageBtn.addEventListener('click', () => {
+  if (currentImageIndex < thumbnailImages.length - 1) {
+    changeImage(currentImageIndex + 1);
+  }
+});
 
- // Image navigation functionality
- const prevButton = document.getElementById('prev-image');
- const nextButton = document.getElementById('next-image');
- const images = [
-   'images/image.png',
-   'images/image copy 2.png',
-   'images/image copy 3.png',
-   'images/image copy 4.png',
-   'images/image copy 5.png',
-   'images/image copy 6.png',
-   'images/image copy 7.png',
-   'images/image copy 8.png'
- ];
- let currentIndex = 0;
+// Thumbnail click to change main image
+thumbnailImages.forEach((thumbnail, index) => {
+  thumbnail.addEventListener('click', () => {
+    changeImage(index);
+  });
+});
 
- function updateMainImage(index) {
-   mainImage.src = images[index];
- }
+// Size selection
+const sizeButtons = document.querySelectorAll('.size-button');
+const totalPrice = document.getElementById('total-price');
+const priceElement = document.getElementById('price');
 
- prevButton.addEventListener('click', () => {
-   currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-   updateMainImage(currentIndex);
- });
+sizeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove selected class from all buttons
+    sizeButtons.forEach(btn => btn.classList.remove('selected'));
 
- nextButton.addEventListener('click', () => {
-   currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-   updateMainImage(currentIndex);
- });
+    // Add selected class to the clicked button
+    button.classList.add('selected');
+
+    // Update price based on size
+    const size = button.getAttribute('data-size');
+    let newPrice = 15; // Default price
+
+    if (size === 'M') {
+      newPrice = 20; // Example price for Medium
+    } else if (size === 'L') {
+      newPrice = 25; // Example price for Large
+    }
+
+    priceElement.textContent = `$${newPrice}`;
+    totalPrice.textContent = `$${newPrice}`;
+  });
+});
+
+// Add to Cart button functionality (optional)
+const addToCartBtn = document.querySelector('.add-to-cart');
+addToCartBtn.addEventListener('click', () => {
+  alert('Item added to cart!');
+});
