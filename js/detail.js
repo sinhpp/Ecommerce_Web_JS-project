@@ -62,5 +62,35 @@ sizeButtons.forEach(button => {
 // Add to Cart button functionality (optional)
 const addToCartBtn = document.querySelector('.add-to-cart');
 addToCartBtn.addEventListener('click', () => {
-  alert('Item added to cart!');
+  Swal.fire({
+    icon: 'success',
+    title: 'Added to Cart',
+    text: 'The product has been added to your cart.',
+    showConfirmButton: true,
+    timer: 1500
+  });
+});
+
+// Select the "Add your Favorite" button
+const addToFavoriteButton = document.querySelector('.add-to-cart');
+
+// Select the heart icon's count element
+const favoriteCount = document.querySelector('.header-user-actions .action-btn:nth-child(2) .count');
+
+// Add a click event listener to the button
+addToFavoriteButton.addEventListener('click', () => {
+  // Get the current count
+  let currentCount = parseInt(favoriteCount.textContent);
+
+  // Increment the count
+  favoriteCount.textContent = currentCount + 1;
+
+  // Show SweetAlert confirmation
+  Swal.fire({
+    icon: 'success',
+    title: 'Added to Favorites',
+    text: 'The product has been added to your favorites!',
+    showConfirmButton: true,
+    timer: 1500
+  });
 });
