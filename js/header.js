@@ -27,7 +27,7 @@ const navigateToPage = (event) => {
   const pageName = event.target.textContent.trim().toLowerCase(); // Get the menu title and normalize it
   const pageMap = {
     home: "../index.html", // Define the mapping between menu titles and pages
-    "women's": "women.html",
+    "women's": "pages/products.html",
     blog: "../pages/blog.html",
     contact: "../pages/contact.html"
   };
