@@ -3,27 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="/css/product/bag.css">
+    <title>Elegance Redefined</title>
+    <script src="/js/product.js" defer></script>
     <link rel="stylesheet" href="/css/product/product.css">
     <link rel="stylesheet" href="/css/product/button.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="/css/product/bag.css">
+
+
+    <!-- //navbar// -->
+      <!--
+      - favicon
+    -->
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" type="image/x-icon">
+
+        <!--
+            - custom css link
+            -->
+        <link rel="stylesheet" href="../css/style-prefix.css">
+
+        <!--
+            - google font link
+            -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+
+
+
 </head>
-<body>
-    <header>
-        <div class="container-product">
-            <h1>Elegance redefined for every occasion</h1>
-            <a href="#" class="shop-now">Shop now</a>
+<!-- navbar// -->
+  <!-- //navbar// -->
+     <!-- Header -->
+ 
+<div class="overlay" data-overlay></div>
+
+
+<div class="header-main">
+
+  <div class="container">
+
+    <a href="#" class="header-logo">
+      <img src="images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+    </a>
+
+    <div class="header-search-container">
+
+      <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+      <button class="search-btn">
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <div class="header-user-actions">
+
+      <button class="action-btn">
+        <ion-icon name="person-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+        <span class="count">0</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<nav class="desktop-navigation-menu">
+
+  <div class="container">
+
+    <ul class="desktop-menu-category-list">
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Home</a>
+      </li>
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Categories</a>
+
+        <div class="dropdown-panel">
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Clothes</a>
+            </li>
+
+
+
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="/img_product/c3longwhite.png" alt="headphone collection" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Dress</a>
+            </li>
+
+
+
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="/img_product/d1white.png" alt="men's fashion" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="#">Shoes</a>
+            </li>
+
+
+
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="/img_product/s2white.png" alt="women's fashion" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="dropdown-panel-list">
+
+            <li class="menu-title">
+              <a href="bag.html">Bags</a>
+            </li>
+            <li class="panel-list-item">
+              <a href="#">
+                <img src="/img_product/b3white.png" alt="mouse collection" width="250" height="119">
+              </a>
+            </li>
+
+          </ul>
+
         </div>
-       <div class="img-product">
-        <img src="/img_product/list-card/bag1.png" alt="">
-       </div>  
-    </header>
+      </li>
+
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Women's</a>
+
+        <ul class="dropdown-list">
+
+          <li class="dropdown-item">
+            <a href="#">Dress & Frock</a>
+          </li>
+
+          <li class="dropdown-item">
+            <a href="#">Earrings</a>
+          </li>
+
+          <li class="dropdown-item">
+            <a href="#">Necklace</a>
+          </li>
+
+          <li class="dropdown-item">
+            <a href="#">Makeup Kit</a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="menu-category">
+        <a href="#" class="menu-title">Blog</a>
+      </li>
+
+      <li class="menu-category">
+        <a href="#" class="menu-title">Hot Offers</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>
+
     <section>
         <div class="container-fluid mt-2 mb-5">
             <div class="products">
