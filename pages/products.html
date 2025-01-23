@@ -50,360 +50,518 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-    <header>
-        <div class="container-product">
-            <h1>Elegance redefined for every occasion</h1>
-            <a href="#" class="shop-now">Shop now</a>
-        </div>
-       <div class="img-product">
-        <img src="/img_product/imgproduct.png" alt="">
-       </div>  
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script>
-        gsap.fromTo(
-            ".img-product", 
-            { x: 300, opacity: 0 }, // Starting position (off-screen to the right)
-            { x: 0, opacity: 1, duration: 2, ease: "power2.out" } // Ending position (near text)
-        );
-    </script>
-
-       
-    </header>
-     <section>
-        <div class="container bg-white">
-            <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <div class="container-fluid p-0">
-                    <a class="navbar-brand text-uppercase fw-800" href="#"><span
-                            class="border-red pe-2">Clothes</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
-                        aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fas fa-bars"></span>
-                    </button>
-                    
-                </div>
-            </nav>
-            <!-- // blog card// -->
-             <!--
-      - BLOG
-    -->
-
-    <div class="blog">
-
-      <div class="container">
-
-        <div class="blog-container has-scrollbar">
-
-          <div class="blog-card">
-            <a href="#">
-              <img src="/img_product/list-card/clothes3 (18).png" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300"
-                class="blog-banner">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Fashion</a>
-
-              <a href="#">
-                <h3 class="blog-title">Clothes Retail KPIs 2024 Guide for Clothes Executives.</h3>
-              </a>
-
-              <p class="blog-meta">
-                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2025</time>
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="/img_product/list-card/dress3.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
-                class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Clothes</a>
-
-              <h3>
-                <a href="#" class="blog-title">Dress to Impress—Effortlessly.</a>
-              </h3>
-
-              <p class="blog-meta">
-                By <cite>Mrs Soklen</cite> / <time datetime="2022-01-18">Jan 29, 2025</time>
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="/img_product/list-card/shose2.png" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
-                class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Shoes</a>
-
-              <h3>
-                <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
-              </h3>
-
-              <p class="blog-meta">
-                By <cite>Mrs Pich</cite> / <time datetime="2022-02-10">Feb 10, 2025</time>
-              </p>
-
-            </div>
-
-          </div>
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img src="/img_product/list-card/bagnew.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
-                class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Sports</a>
-
-              <h3>
-                <a href="#" class="blog-title">Sports fashion Trends: How to Win the Pickup Battle.</a>
-              </h3>
-
-              <p class="blog-meta">
-                By <cite>Mr Bunny</cite> / <time datetime="2022-03-15">Mar 15, 2025</time>
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-        <div>
-            <!-- //disconut// -->
+   <!-- Header -->
+ 
+   <div class="overlay" data-overlay></div>
 
 
-            <div class="slider-item">
-              <img src="/images/products/bannerbg.jpg" alt="modern sunglasses" class="banner-img">
-  
-              <div class="banner-content">
-  
-                <p class="banner-subtitle">Trending accessories</p>
-  
-                <h2 class="banner-title">Find your perfect fit</h2>
-  
-                <a href="#" class="banner-btn">Shop now</a>
-  
-              </div>
-  
-            </div>
-            <!-- // -->
-          
-        </div>
-        <div class="container bg-white">
-            <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <div class="container-fluid p-0">
-                    <a class="navbar-brand text-uppercase fw-800" href="#"><span
-                            class="border-red pe-2">Dresses</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
-                        aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fas fa-bars"></span>
-                    </button>
-                    
-                </div>
-            </nav>
-         <!-- //dress// -->
-         <div class="row">
-          <div
-              class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-              <div class="product">
-                  <img src="/img_product/list-card/dress.png"
-                      alt="">
-                  <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                      <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                      <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                      <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                  </ul>
-              </div>
-              <div class="tag bg-red">sale</div>
-              <div class="title pt-4 pb-1">Winter Sweater</div>
-              <div class="d-flex align-content-center justify-content-center">
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-              </div>
-              <div class="price">$ 60.0</div>
-          </div>
-          <div
-              class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-              <div class="product">
-                  <img src="/img_product/list-card/dress2.png"
-                      alt="">
-                  <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                      <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                      <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                      <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                  </ul>
-              </div>
-              <div class="tag bg-black">out of stock</div>
-              <div class="title pt-4 pb-1">Denim Dresses</div>
-              <div class="d-flex align-content-center justify-content-center">
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                  <span class="fas fa-star"></span>
-                </div>
-                <div class="price">$ 55.0</div>
-            </div>
-            <div
-                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                <div class="product">
-                    <img src="/img_product/list-card/dress3.png"
-                        alt="">
-                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                    </ul>
-                </div>
-                <div class="tag bg-green">new</div>
-                <div class="title pt-4 pb-1"> Empire Waist Dresses</div>
-                <div class="d-flex align-content-center justify-content-center">
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                </div>
-                <div class="price">$ 70.0</div>
-            </div>
-            <div
-                class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                <div class="product">
-                    <img src="/img_product/list-card/dres4.png"
-                        alt="">
-                    <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                        <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                        <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                        <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                    </ul>
-                </div>
-                <div class="title pt-4 pb-1">Pinafore Dresses</div>
-                <div class="d-flex align-content-center justify-content-center">
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span>
-                </div>
-                <div class="price">$ 60.0</div>
-            </div>
-        </div>
-    
-              <div class="row">
-                  <div
-                      class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                      <div class="product">
-                          <img src="/img_product/list-card/clothes.png"
-                              alt="">
-                          <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                              <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                              <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                              <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                          </ul>
-                      </div>
-                      <div class="tag bg-red">sale</div>
-                      <div class="title pt-4 pb-1">Winter Sweater</div>
-                      <div class="d-flex align-content-center justify-content-center">
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                          <span class="fas fa-star"></span>
-                      </div>
-                      <div class="price">$ 60.0</div>
-                  </div>
-                  <div
-                      class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                      <div class="product">
-                          <img src="/img_product/list-card/clothes(18).png"
-                          alt="">
-                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                            <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                        </ul>
-                    </div>
-                    <div class="tag bg-black">out of stock</div>
-                    <div class="title pt-4 pb-1">Denim Dresses</div>
-                    <div class="d-flex align-content-center justify-content-center">
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                    </div>
-                    <div class="price">$ 55.0</div>
-                </div>
-                <div
-                    class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                    <div class="product">
-                        <img src="/img_product/list-card/clothes3 (18).png"
-                            alt="">
-                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                            <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                        </ul>
-                    </div>
-                    <div class="tag bg-green">new</div>
-                    <div class="title pt-4 pb-1"> Empire Waist Dresses</div>
-                    <div class="d-flex align-content-center justify-content-center">
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                    </div>
-                    <div class="price">$ 70.0</div>
-                </div>
-                <div
-                    class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-                    <div class="product">
-                        <img src="/img_product/list-card/clothes4(18).png"
-                            alt="">
-                        <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
-                            <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
-                            <li class="icon mx-3"><span class="far fa-heart"></span></li>
-                            <li class="icon"><span class="fas fa-shopping-bag"></span></li>
-                        </ul>
-                    </div>
-                    <div class="title pt-4 pb-1">Pinafore Dresses</div>
-                    <div class="d-flex align-content-center justify-content-center">
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                        <span class="fas fa-star"></span>
-                    </div>
-                    <div class="price">$ 60.0</div>
-                </div>
-            </div>
-        </div>
+   <div class="header-main">
+   
+     <div class="container">
+   
+       <a href="#" class="header-logo">
+         <img src="../images/logo/splLOgo.png" alt="SPL logo" width="120" height="130">
+       </a>
+   
+       <div class="header-search-container">
+   
+         <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+   
+         <button class="search-btn">
+           <ion-icon name="search-outline"></ion-icon>
+         </button>
+   
+       </div>
+   
+       <div class="header-user-actions">
+   
+         <button class="action-btn">
+           <ion-icon name="person-outline"></ion-icon>
+         </button>
+   
+         <button class="action-btn">
+           <ion-icon name="heart-outline"></ion-icon>
+           <span class="count">0</span>
+         </button>
+   
+         <button class="action-btn">
+           <ion-icon name="bag-handle-outline"></ion-icon>
+           <span class="count">0</span>
+         </button>
+   
+       </div>
+   
+     </div>
+   
+   </div>
+   
+   <nav class="desktop-navigation-menu">
+   
+     <div class="container">
+   
+       <ul class="desktop-menu-category-list">
+   
+         <li class="menu-category">
+           <a href="../index.html" class="menu-title">Home</a>
+         </li>
+   
+         <li class="menu-category">
+           <a href="#" class="menu-title">Categories</a>
+   
+           <div class="dropdown-panel">
+   
+             <ul class="dropdown-panel-list">
+   
+               <li class="menu-title">
+                 <a href="#">Clothes</a>
+               </li>
+   
+             </ul>
+   
+             <ul class="dropdown-panel-list">
+   
+               <li class="menu-title">
+                 <a href="#">Dress</a>
+               </li>
+   
+             </ul>
+   
+             <ul class="dropdown-panel-list">
+   
+               <li class="menu-title">
+                 <a href="#">Shoes</a>
+               </li>
+   
+             </ul>
+   
+             <ul class="dropdown-panel-list">
+               <li class="menu-title">
+                 <a href="#">Bags</a>
+               </li>
+   
+             </ul>
+   
+           </div>
+         </li>
+   
+         <li class="menu-category">
+           <a href="#" class="menu-title">PRODUCTS</a>
+         </li>
+   
+         <li class="menu-category">
+           <a href="blog.html" class="menu-title">Blog</a>
+         </li>
+   
+         <li class="menu-category">
+           <a href="contact.html" class="menu-title">Contact</a>
+         </li>
+   
+       </ul>
+   
+     </div>
+   
+   </nav>
+   
+   <div class="mobile-bottom-navigation">
+   
+     <button class="action-btn" data-mobile-menu-open-btn>
+       <ion-icon name="menu-outline"></ion-icon>
+     </button>
+   
+     <button class="action-btn">
+       <ion-icon name="bag-handle-outline"></ion-icon>
+   
+       <span class="count">0</span>
+     </button>
+   
+     <button class="action-btn">
+       <ion-icon name="home-outline"></ion-icon>
+     </button>
+   
+     <button class="action-btn">
+       <ion-icon name="heart-outline"></ion-icon>
+   
+       <span class="count">0</span>
+     </button>
+   
+     <button class="action-btn" data-mobile-menu-open-btn>
+       <ion-icon name="grid-outline"></ion-icon>
+     </button>
+   
+   </div>
+   
+   <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+   
+   </nav>
+   
+   </header>
+ 
+   <!--
+     - custom js link
+   -->
+   <script src="../js/script.js"></script>
+ 
+   <!--
+     - ionicon link
+   -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+ 
+     <header>
+         <div class="container-product">
+             <h1>Elegance redefined for every occasion</h1>
+             <a href="#" class="shop-now">Shop now</a>
+         </div>
+        <div class="img-product">
+         <img src="/img_product/imgproduct.png" alt="">
+        </div>  
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script>
+         gsap.fromTo(
+             ".img-product", 
+             { x: 300, opacity: 0 }, // Starting position (off-screen to the right)
+             { x: 0, opacity: 1, duration: 2, ease: "power2.out" } // Ending position (near text)
+         );
+     </script>
+ 
+        
+     </header>
+      <section>
+         <div class="container bg-white">
+             <nav class="navbar navbar-expand-md navbar-light bg-white">
+                 <div class="container-fluid p-0">
+                     <a class="navbar-brand text-uppercase fw-800" href="#"><span
+                             class="border-red pe-2">Clothes</span></a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
+                         aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="fas fa-bars"></span>
+                     </button>
+                     
+                 </div>
+             </nav>
+             <!-- // blog card// -->
+              <!--
+       - BLOG
+     -->
+ 
+     <div class="blog">
+ 
+       <div class="container">
+ 
+         <div class="blog-container has-scrollbar">
+ 
+           <div class="blog-card">
+             <a href="#">
+               <img src="/img_product/list-card/clothes3 (18).png" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300"
+                 class="blog-banner">
+             </a>
+ 
+             <div class="blog-content">
+ 
+               <a href="#" class="blog-category">Fashion</a>
+ 
+               <a href="#">
+                 <h3 class="blog-title">Clothes Retail KPIs 2024 Guide for Clothes Executives.</h3>
+               </a>
+ 
+               <p class="blog-meta">
+                 By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2025</time>
+               </p>
+ 
+             </div>
+ 
+           </div>
+ 
+           <div class="blog-card">
+ 
+             <a href="#">
+               <img src="/img_product/list-card/dress3.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                 class="blog-banner" width="300">
+             </a>
+ 
+             <div class="blog-content">
+ 
+               <a href="#" class="blog-category">Clothes</a>
+ 
+               <h3>
+                 <a href="#" class="blog-title">Dress to Impress—Effortlessly.</a>
+               </h3>
+ 
+               <p class="blog-meta">
+                 By <cite>Mrs Soklen</cite> / <time datetime="2022-01-18">Jan 29, 2025</time>
+               </p>
+ 
+             </div>
+ 
+           </div>
+ 
+           <div class="blog-card">
+ 
+             <a href="#">
+               <img src="/img_product/list-card/shose2.png" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                 class="blog-banner" width="300">
+             </a>
+ 
+             <div class="blog-content">
+ 
+               <a href="#" class="blog-category">Shoes</a>
+ 
+               <h3>
+                 <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online Revenue.</a>
+               </h3>
+ 
+               <p class="blog-meta">
+                 By <cite>Mrs Pich</cite> / <time datetime="2022-02-10">Feb 10, 2025</time>
+               </p>
+ 
+             </div>
+ 
+           </div>
+ 
+           <div class="blog-card">
+ 
+             <a href="#">
+               <img src="/img_product/list-card/bagnew.png" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                 class="blog-banner" width="300">
+             </a>
+ 
+             <div class="blog-content">
+ 
+               <a href="#" class="blog-category">Sports</a>
+ 
+               <h3>
+                 <a href="#" class="blog-title">Sports fashion Trends: How to Win the Pickup Battle.</a>
+               </h3>
+ 
+               <p class="blog-meta">
+                 By <cite>Mr Bunny</cite> / <time datetime="2022-03-15">Mar 15, 2025</time>
+               </p>
+ 
+             </div>
+ 
+           </div>
+ 
+         </div>
+ 
+       </div>
+ 
+     </div>
+ 
+         
+             <!-- //disconut// -->
+ 
+ 
+             <div class="slider-item">
+               <img src="/images/products/bannerbg.jpg" alt="modern sunglasses" class="banner-img">
+   
+               <div class="banner-content">
+   
+                 <p class="banner-subtitle">Trending accessories</p>
+   
+                 <h2 class="banner-title">Find your perfect fit</h2>
+   
+                 <a href="#" class="banner-btn">Shop now</a>
+   
+               </div>
+   
+             </div>
+             <!-- // -->
+           
+         </div>
+         <div class="container bg-white">
+             <nav class="navbar navbar-expand-md navbar-light bg-white">
+                 <div class="container-fluid p-0">
+                     <a class="navbar-brand text-uppercase fw-800" href="#"><span
+                             class="border-red pe-2">Dresses</span></a>
+                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
+                         aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="fas fa-bars"></span>
+                     </button>
+                     
+                 </div>
+             </nav>
+          <!-- //dress// -->
+          <div class="row">
+           <div
+               class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+               <div class="product">
+                   <img src="/img_product/list-card/dress.png"
+                       alt="">
+                   <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                       <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                       <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                       <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                   </ul>
+               </div>
+               <div class="tag bg-red">sale</div>
+               <div class="title pt-4 pb-1">Winter Sweater</div>
+               <div class="d-flex align-content-center justify-content-center">
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+               </div>
+               <div class="price">$ 60.0</div>
+           </div>
+           <div
+               class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+               <div class="product">
+                   <img src="/img_product/list-card/dress2.png"
+                       alt="">
+                   <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                       <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                       <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                       <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                   </ul>
+               </div>
+               <div class="tag bg-black">out of stock</div>
+               <div class="title pt-4 pb-1">Denim Dresses</div>
+               <div class="d-flex align-content-center justify-content-center">
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                   <span class="fas fa-star"></span>
+                 </div>
+                 <div class="price">$ 55.0</div>
+             </div>
+             <div
+                 class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                 <div class="product">
+                     <img src="/img_product/list-card/dress3.png"
+                         alt="">
+                     <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                         <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                         <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                         <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                     </ul>
+                 </div>
+                 <div class="tag bg-green">new</div>
+                 <div class="title pt-4 pb-1"> Empire Waist Dresses</div>
+                 <div class="d-flex align-content-center justify-content-center">
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                 </div>
+                 <div class="price">$ 70.0</div>
+             </div>
+             <div
+                 class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                 <div class="product">
+                     <img src="/img_product/list-card/dres4.png"
+                         alt="">
+                     <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                         <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                         <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                         <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                     </ul>
+                 </div>
+                 <div class="title pt-4 pb-1">Pinafore Dresses</div>
+                 <div class="d-flex align-content-center justify-content-center">
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                     <span class="fas fa-star"></span>
+                 </div>
+                 <div class="price">$ 60.0</div>
+             </div>
+         </div>
+     
+               <div class="row">
+                   <div
+                       class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                       <div class="product">
+                           <img src="/img_product/list-card/clothes.png"
+                               alt="">
+                           <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                               <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                               <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                               <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                           </ul>
+                       </div>
+                       <div class="tag bg-red">sale</div>
+                       <div class="title pt-4 pb-1">Winter Sweater</div>
+                       <div class="d-flex align-content-center justify-content-center">
+                           <span class="fas fa-star"></span>
+                           <span class="fas fa-star"></span>
+                           <span class="fas fa-star"></span>
+                           <span class="fas fa-star"></span>
+                           <span class="fas fa-star"></span>
+                       </div>
+                       <div class="price">$ 60.0</div>
+                   </div>
+                   <div
+                       class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                       <div class="product">
+                           <img src="/img_product/list-card/clothes(18).png"
+                           alt="">
+                         <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                             <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                             <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                             <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                         </ul>
+                     </div>
+                     <div class="tag bg-black">out of stock</div>
+                     <div class="title pt-4 pb-1">Denim Dresses</div>
+                     <div class="d-flex align-content-center justify-content-center">
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                     </div>
+                     <div class="price">$ 55.0</div>
+                 </div>
+                 <div
+                     class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                     <div class="product">
+                         <img src="/img_product/list-card/clothes3 (18).png"
+                             alt="">
+                         <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                             <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                             <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                             <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                         </ul>
+                     </div>
+                     <div class="tag bg-green">new</div>
+                     <div class="title pt-4 pb-1"> Empire Waist Dresses</div>
+                     <div class="d-flex align-content-center justify-content-center">
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                     </div>
+                     <div class="price">$ 70.0</div>
+                 </div>
+                 <div
+                     class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+                     <div class="product">
+                         <img src="/img_product/list-card/clothes4(18).png"
+                             alt="">
+                         <ul class="d-flex align-items-center justify-content-center list-unstyled icons">
+                             <li class="icon"><span class="fas fa-expand-arrows-alt"></span></li>
+                             <li class="icon mx-3"><span class="far fa-heart"></span></li>
+                             <li class="icon"><span class="fas fa-shopping-bag"></span></li>
+                         </ul>
+                     </div>
+                     <div class="title pt-4 pb-1">Pinafore Dresses</div>
+                     <div class="d-flex align-content-center justify-content-center">
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                         <span class="fas fa-star"></span>
+                     </div>
+                     <div class="price">$ 60.0</div>
+                 </div>
+             </div>
+         </div>
         <div class="container bg-white">
             <nav class="navbar navbar-expand-md navbar-light bg-white">
                 <div class="container-fluid p-0">
