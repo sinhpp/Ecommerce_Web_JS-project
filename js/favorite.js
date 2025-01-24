@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Remove item from cart
     const removeButtons = document.querySelectorAll('.remove-item');
     removeButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default action
+            event.stopPropagation(); // Stop event propagation
+
             Swal.fire({
                 title: 'Are you sure?',
                 text: 'Do you want to remove this item from your cart?',
@@ -20,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     );
                     // Optionally remove the item from the DOM
                     event.target.closest('.cart-item').remove();
+                    updateTotal(); // Update total after item removal
                 }
             });
         });
@@ -28,7 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Move item to wishlist
     const wishlistButtons = document.querySelectorAll('.wishlist-item');
     wishlistButtons.forEach(button => {
-        button.addEventListener('click', function(event) {
+        button.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default action
+            event.stopPropagation(); // Stop event propagation
+
             Swal.fire({
                 title: 'Are you sure?',
                 text: 'Do you want to move this item to your wishlist?',
@@ -46,8 +53,52 @@ document.addEventListener('DOMContentLoaded', function() {
                     );
                     // Optionally remove the item from the cart
                     event.target.closest('.cart-item').remove();
+                    updateTotal(); // Update total after item removal
                 }
             });
         });
     });
+
+    // Function to update the total number of products and total price
+    function updateTotal() {
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+        const priceElements = document.querySelectorAll('.item-price p');
+        const totalProductsElement = document.querySelector('.total-products');
+        const totalPriceElement = document.querySelector('.total-price');
+
+        let totalProducts = 0;
+        let totalPrice = 0;
+
+        quantityInputs.forEach((input, index) => {
+            const quantity = parseInt(input.value);
+            const price = parseFloat(priceElements[index].textContent.replace('$', ''));
+            totalProducts += quantity;
+            totalPrice += quantity * price;
+        });
+
+        // Update the total products and total price
+        totalProductsElement.innerText = `Total Products: ${totalProducts}`;
+        totalPriceElement.innerText = `Total Price: $${totalPrice.toFixed(2)}`;
+    }
+
+    // Insert total products and total price elements
+    const cartSummary = document.querySelector('.cart-summary');
+    const totalProductsElement = document.createElement('p');
+    totalProductsElement.classList.add('total-products');
+    totalProductsElement.innerText = `Total Products: 0`;
+    cartSummary.appendChild(totalProductsElement);
+
+    const totalPriceElement = document.createElement('p');
+    totalPriceElement.classList.add('total-price');
+    totalPriceElement.innerText = `Total Price: $0.00`;
+    cartSummary.appendChild(totalPriceElement);
+
+    // Add event listener to each quantity input
+    const quantityInputs = document.querySelectorAll('.quantity-input');
+    quantityInputs.forEach(input => {
+        input.addEventListener('input', updateTotal);
+    });
+
+    // Initial update
+    updateTotal();
 });
