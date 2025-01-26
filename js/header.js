@@ -44,3 +44,5 @@ const navigateToPage = (event) => {
 menuTitles.forEach((menuTitle) => {
   menuTitle.addEventListener("click", navigateToPage);
 });
+
+
