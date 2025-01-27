@@ -44,3 +44,39 @@ const navigateToPage = (event) => {
 menuTitles.forEach((menuTitle) => {
   menuTitle.addEventListener("click", navigateToPage);
 });
+
+
+
+
+// Get references to the header and other relevant elements
+const header = document.querySelector(".header-main");
+let lastScrollY = window.scrollY;
+let isScrolling;
+
+// Function to handle scroll behavior
+const handleScroll = () => {
+  const currentScrollY = window.scrollY;
+
+  // Hide the header when scrolling down, show it when scrolling up
+  if (currentScrollY > lastScrollY) {
+    // Scrolling down
+    header.style.top = "-100px"; // Adjust the value to match your header height
+  } else {
+    // Scrolling up
+    header.style.top = "0";
+  }
+
+  // Reset lastScrollY
+  lastScrollY = currentScrollY;
+
+  // Clear the previous timeout
+  clearTimeout(isScrolling);
+
+  // Set a timeout to show the navbar after 2 seconds of no scrolling
+  isScrolling = setTimeout(() => {
+    header.style.top = "0";
+  }, 2000);
+};
+
+// Attach the scroll event listener to the window
+window.addEventListener("scroll", handleScroll);
