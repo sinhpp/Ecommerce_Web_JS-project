@@ -46,6 +46,7 @@ menuTitles.forEach((menuTitle) => {
 });
 
 
+<<<<<<< HEAD
 
 
 // Get references to the header and other relevant elements
@@ -80,3 +81,5 @@ const handleScroll = () => {
 
 // Attach the scroll event listener to the window
 window.addEventListener("scroll", handleScroll);
+=======
+>>>>>>> 32926569b1841cd602db28181c481212e0c201b2

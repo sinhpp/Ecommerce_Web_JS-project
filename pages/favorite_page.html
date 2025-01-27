@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Page</title>
+    <title>SPL Store</title>
     <!-- Link to Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/favorite_page.css">
@@ -11,7 +11,7 @@
     <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="../../images/logo/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../images/logo/splLOgo.png" type="image/x-icon">
 
   <!--
     - custom css link
@@ -28,169 +28,151 @@
 
 </head>
 <body>
-    <!-- Header -->
+  <!-- Header -->
 
-<div class="overlay" data-overlay></div>
+  <div class="overlay" data-overlay></div>
 
 
-<div class="header-main">
+  <div class="header-main">
 
-  <div class="container">
+    <div class="container">
 
-    <a href="#" class="header-logo">
-      <img src="../images/logo/splLOgo.png" alt="SPL Store's logo" width="120" height="130">
-    </a>
+      <a href="#" class="header-logo">
+        <img src="images/logo/splLOgo.png" alt="Anon's logo" width="120" height="130">
+      </a>
 
-    <div class="header-search-container">
+      <div class="header-search-container">
 
-      <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+        <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
 
-      <button class="search-btn">
-        <ion-icon name="search-outline"></ion-icon>
-      </button>
+        <button class="search-btn">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
 
-    </div>
+      </div>
 
-    <div class="header-user-actions">
+      <div class="header-user-actions">
 
-      <button class="action-btn">
-        <ion-icon name="person-outline"></ion-icon>
-      </button>
+        <button class="action-btn">
+          <ion-icon name="person-outline"></ion-icon>
+        </button>
 
-      <button class="action-btn">
-        <ion-icon name="heart-outline"></ion-icon>
-        <span class="count">0</span>
-      </button>
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
 
-      <button class="action-btn">
-        <ion-icon name="bag-handle-outline"></ion-icon>
-        <span class="count">0</span>
-      </button>
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+          <span class="count">0</span>
+        </button>
+
+      </div>
 
     </div>
 
   </div>
 
-</div>
+  <nav class="desktop-navigation-menu">
 
-<nav class="desktop-navigation-menu">
+    <div class="container">
 
-  <div class="container">
+      <ul class="desktop-menu-category-list">
 
-    <ul class="desktop-menu-category-list">
+        <li class="menu-category">
+          <a href="../index.html" class="menu-title">Home</a>
+        </li>
 
-      <li class="menu-category">
-        <a href="#" class="menu-title">Home</a>
-      </li>
+        <li class="menu-category">
+          <a href="#" class="menu-title">Categories</a>
 
-      <li class="menu-category">
-        <a href="#" class="menu-title">Categories</a>
+          <div class="dropdown-panel">
 
-        <div class="dropdown-panel">
+            <ul class="dropdown-panel-list">
 
-          <ul class="dropdown-panel-list">
+              <li class="menu-title">
+                <a href="#">Clothes</a>
+              </li>
 
-            <li class="menu-title">
-              <a href="#">Clothes</a>
-            </li>
+            </ul>
 
+            <ul class="dropdown-panel-list">
 
+              <li class="menu-title">
+                <a href="#">Dress</a>
+              </li>
 
-            <li class="panel-list-item">
-              <a href="#">
-                <img src="../images/electronics-banner-1.jpg" alt="headphone collection" width="250" height="119">
-              </a>
-            </li>
+            </ul>
 
-          </ul>
+            <ul class="dropdown-panel-list">
 
-          <ul class="dropdown-panel-list">
+              <li class="menu-title">
+                <a href="#">Shoes</a>
+              </li>
 
-            <li class="menu-title">
-              <a href="#">Dress</a>
-            </li>
+            </ul>
 
+            <ul class="dropdown-panel-list">
 
+              <li class="menu-title">
+                <a href="#">Bags</a>
+              </li>
+            </ul>
 
-            <li class="panel-list-item">
-              <a href="#">
-                <img src="../images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
-              </a>
-            </li>
+          </div>
+        </li>
 
-          </ul>
+        <li class="menu-category">
+          <a href="products.html" class="menu-title">PRODUCTS</a>
+        </li>
 
-          <ul class="dropdown-panel-list">
+        <li class="menu-category">
+          <a href="blog.html" class="menu-title">Blog</a>
+        </li>
 
-            <li class="menu-title">
-              <a href="#">Shoes</a>
-            </li>
+        <li class="menu-category">
+          <a href="contact.html" class="menu-title">Contact</a>
+        </li>
 
+      </ul>
 
+    </div>
 
-            <li class="panel-list-item">
-              <a href="#">
-                <img src="../images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
-              </a>
-            </li>
+  </nav>
 
-          </ul>
+  <div class="mobile-bottom-navigation">
 
-          <ul class="dropdown-panel-list">
+    <button class="action-btn" data-mobile-menu-open-btn>
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
 
-            <li class="menu-title">
-              <a href="#">Bags</a>
-            </li>
-            <li class="panel-list-item">
-              <a href="#">
-                <img src="../images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
-              </a>
-            </li>
+    <button class="action-btn">
+      <ion-icon name="bag-handle-outline"></ion-icon>
 
-          </ul>
+      <span class="count">0</span>
+    </button>
 
-        </div>
-      </li>
+    <button class="action-btn">
+      <ion-icon name="home-outline"></ion-icon>
+    </button>
 
+    <button class="action-btn">
+      <ion-icon name="heart-outline"></ion-icon>
 
-      <li class="menu-category">
-        <a href="#" class="menu-title">Women's</a>
+      <span class="count">0</span>
+    </button>
 
-        <ul class="dropdown-list">
-
-          <li class="dropdown-item">
-            <a href="#">Dress & Frock</a>
-          </li>
-
-          <li class="dropdown-item">
-            <a href="#">Earrings</a>
-          </li>
-
-          <li class="dropdown-item">
-            <a href="#">Necklace</a>
-          </li>
-
-          <li class="dropdown-item">
-            <a href="#">Makeup Kit</a>
-          </li>
-
-        </ul>
-      </li>
-
-
-      <li class="menu-category">
-        <a href="#" class="menu-title">Blog</a>
-      </li>
-
-      <li class="menu-category">
-        <a href="#" class="menu-title">Hot Offers</a>
-      </li>
-
-    </ul>
+    <button class="action-btn" data-mobile-menu-open-btn>
+      <ion-icon name="grid-outline"></ion-icon>
+    </button>
 
   </div>
 
-</nav>
+  <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+  </nav>
+
+  </header>
 
 <div class="mobile-bottom-navigation">
 
